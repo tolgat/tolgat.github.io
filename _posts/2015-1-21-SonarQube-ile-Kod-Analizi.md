@@ -31,7 +31,7 @@ Biz ilk taramada ciddi sorun yaratacak maddeleri temizledikten sonra yeni maddel
 
 Kullanım ihtiyaçlarına göre 2 farklı senaryo kullanıyoruz:
 
-###Senaryo 1: Remote Sonar Server üzerinden kod analizi
+##Senaryo 1: Remote Sonar Server üzerinden kod analizi
 Network’de erişebildiğimiz bir makinede kurulmuş olan bir Sonar üzerinden local’deki kodların analizi yapılabilir. Eclipse içinden Remote Server ile sorunsuz kod analizi yapılabilmesi için alttaki işlemler sırayla yapılır.
 
 1. Eclipse Plugin Kurulumu: Linkte verilen bilgilere göre Eclipse plugin’i kurulur:
@@ -43,7 +43,7 @@ Network’de erişebildiğimiz bir makinede kurulmuş olan bir Sonar üzerinden 
 4. Check-in öncesi kod analizi: Yeni geliştirilen Kod’larda Sonar ile kod analizi yapılıp, issue’lar temizlendikten sonra check-inlenmelidir.
 
 
-###Senaryo 2: Local Sonar Kullanımı
+##Senaryo 2: Local Sonar Kullanımı
 Local’de Sonar kurmak için aşağıdaki adımlar izlenir.
 
 **1- JDK 1.7 kurulur.**

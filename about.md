@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This blog contains my personal tech notes and mostly about frontend JavaScript and backend Java world.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+This blog is developed by Jekyll and hosted by GitHub pages. Thanks to Barry Clark for a nice set up repository:
+[https://github.com/barryclark/jekyll-now#quick-start](https://github.com/barryclark/jekyll-now#quick-start)
