@@ -2,8 +2,8 @@
 layout: post
 title: jQuery Deferred
 ---
-jQuery 1.5 ile gelen Deferred'ler ile işlem yapılan task ile işlem sonucu dönen asenkron dönüş değeri bir birinden ayrılarak daha sade ve temiz bir kod yazmak mümkün.
-Javascript asenkron ile dönen jQuery Deferred ile alakalı güzel bir makale: [http://www.erichynds.com/jquery/using-deferreds-in-jquery/](http://www.erichynds.com/jquery/using-deferreds-in-jquery/) 
+jQuery 1.5 ile gelen Deferred'ler ile işlem yapılan task ile işlem sonucu dönen asenkron dönüş değeri birbirinden ayrılarak daha sade ve temiz bir kod yazmak mümkün.
+jQuery Deferred ile alakalı güzel bir makale: [http://www.erichynds.com/jquery/using-deferreds-in-jquery/](http://www.erichynds.com/jquery/using-deferreds-in-jquery/) 
 JQuery Deferred API: [http://api.jquery.com/category/deferred-object/](http://api.jquery.com/category/deferred-object/)
 deferred.resolve 
 
