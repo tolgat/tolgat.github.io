@@ -3,12 +3,13 @@ layout: post
 title: AngularJs
 ---
 
-AngularJs'de tüm button'lara işlem öncesi "Emin misin?" gibi bir kontrol eklemek için aşağıda detayı verilen tcReallyClick adlı directive'i kullanabilirsiniz.
-Bu şekşlde tüm butonlara html ile set edilen basit bir html tag ile standart bir kontrol ekleyebilirsiniz.
+AngularJs'de tüm button'lara işlem öncesi "Emin misin?" gibi bir kontrol eklemek için aşağıda detayı verilen tcReallyClick adını verdiğim directive'i kullanabilirsiniz.
+Bu directive'i ngReallyClick directive'inden uyarladım: [https://gist.github.com/asafge/7430497](https://gist.github.com/asafge/7430497).
+Bu şekilde tüm butonlara html ile ayarlanabilen basit bir html tag ile standart bir kontrol ekleyebilirsiniz.
 
 Örnek kullanım:
 
-```
+```HTML
  <button tc-really-click="taskDelete()"
              tc-really-click-message="Task ve bağlı tüm item'lar silinecek. Silmek istediğinden emin misin?"
              tc-really-click-ok-btn-message="Evet, sil"
@@ -16,7 +17,8 @@ Bu şekşlde tüm butonlara html ile set edilen basit bir html tag ile standart 
              class="btn btn-sm btn-danger ng-click-active">Sil
  </button>
 ```
-Parametreleri:
+
+Parametreler:
 
 - tc-really-click: zorunlu. callback ile çağrılacak fnc verilmelidir.
 - tc-really-click-message: zorunlu. Ekrana verilecek uyarı mesajı
@@ -26,20 +28,21 @@ Parametreleri:
 reference: ngReallyClick directive'inden uyarlandı: https://gist.github.com/asafge/7430497
 
 
-tc-really-click.html
-```
+**tc-really-click.html:**
+
+```html
 <div class="modal-body">
     <span ng-bind="message"></span>
 </div>
-
-
 <div class="modal-footer">
     <button class="btn btn-primary" ng-click="okGo()"><span ng-bind="okBtnMessage"></span></button>
     <button class="btn btn-default" ng-click="cancelModal()"><span ng-bind="cancelBtnMessage"></span></button>
 </div>
 ```
 
-tc-really-click-ctrl.js
+
+**tc-really-click-ctrl.js:**
+
 ```
 'use strict';
 
@@ -71,9 +74,9 @@ module.exports = function ($scope, $modalInstance, message, okBtnMessage, cancel
 };
 ```
 
-tc-really-click-directive.js
+**tc-really-click-directive.js:**
 
-```
+```javascript
 'use strict';
 
 var ng = require('angular');
@@ -149,4 +152,12 @@ module.exports = function ($modal) {
         link: link
     };
 };
+```
+
+**index.js:**
+
+```javascript
+module.exports = ng.module('directives-tcReallyClick-directive', [])
+    .controller('TcReallyClickCtrl', require('./tc-really-click-ctrl'))
+    .directive('tcReallyClick', require('./tc-really-click-directive'));
 ```
