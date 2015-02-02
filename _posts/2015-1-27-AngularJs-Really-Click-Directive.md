@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AngularJs
+title: AngularJs "Really Click" Directive
 ---
 
 AngularJs'de tüm button'lara işlem öncesi "Emin misin?" gibi bir kontrol eklemek için aşağıda detayı verilen tcReallyClick adını verdiğim directive'i kullanabilirsiniz.
